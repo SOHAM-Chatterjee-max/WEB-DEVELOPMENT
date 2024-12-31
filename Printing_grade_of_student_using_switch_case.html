@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Printing grades of a student</title>
+</head>
+<body>
+      <script>
+  
+        const n1=parseFloat(prompt("Enter marks in subject 1"));
+        const n2=parseFloat(prompt("Enter marks in subject 2"));
+        const n3=parseFloat(prompt("Enter marks in subject 3"));
+        const n4=parseFloat(prompt("Enter marks in subject 4"));
+        const n5=parseFloat(prompt("Enter marks in subject 5"));
+       const a=Math.floor((n1+n2+n3+n4+n5)/5);
+        let grade;
+        switch(true)
+        {
+            case (a>=90):
+                grade='A';
+                break;
+                case(a>=80):
+                grade='B';
+                break;
+                case(a>=70):
+                grade='C';
+                break;
+                case(a>=60):
+                grade='D';
+                break;
+                case(a>=50):
+                gde='E';
+                break;
+                case(a<50):
+                grade='F';
+        }
+        console.log(grade);
+      </script>
+      </body>
+      </html>

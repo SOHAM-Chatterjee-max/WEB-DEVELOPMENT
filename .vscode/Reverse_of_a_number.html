@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse of a number</title>
+</head>
+<body>
+      <script>
+      const ui=prompt("ENTER A number");
+      let rev=0;
+      let temp=ui;
+      while(temp>0)
+      {
+        let d=temp%10;
+        rev=rev*10+d;
+        temp=Math.floor(temp/10);
+      }
+      console.log(rev);
+      </script>
+      </body>
+      </html>
